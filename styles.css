@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #111;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+.card {
+  background-color: #181818;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 255, 128, 0.1);
+  margin: 0rem 0;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-3px);
+  border: 2px solid #ff2222;
+  box-shadow: 0 0 0 2px #ff222233;
+}
+.title-card {
+  text-align: center;
+  font-weight: 600;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.social-icons button {
+  background: none;
+  border: 2px solid #00ff80;
+  color: #00ff80;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.social-icons button:hover {
+  background: #00ff80;
+  color: #000;
+}
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ff2222;      /* Red border */
+  border-radius: 8px;             /* Less rounded, more rectangular */
+  width: 80px;                    /* Rectangle: wider */
+  height: 38px;                   /* Rectangle: less tall */
+  background: transparent;
+  transition: background 0.2s, border-color 0.2s;
+  margin-bottom: 0.2rem;
+}
+.icon-btn img {
+  width: 24px;
+  height: 24px;
+}
+.icon-btn:hover {
+  background: #222;
+  border-color: #ff5555;             /* Slightly lighter red on hover */
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.7rem; /* Reduced from 1.2rem to 0.7rem for a more compact look */
+  margin-top: 0.5rem; /* Reduce from 1.2rem to 0.5rem */
+}
+.card-contact {
+  grid-row: 1 / span 2;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.card-download {
+  grid-row: 1 / span 2;
+  grid-column: 4 / 5;
+  background: #00695c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.download-img {
+  width: 90px;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0005;
+}
+.card-time { grid-row: 1; grid-column: 2; }
+.card-design { grid-row: 1; grid-column: 3; }
+.card-now { grid-row: 2; grid-column: 2; }
+.card-playground { grid-row: 2; grid-column: 3; }
+.card-blog { grid-row: 2; grid-column: 3; display: none; } /* Hide if not needed */
+.card-countries { grid-row: 2; grid-column: 3; display: none; } /* Hide if not needed */
+.card.title-card {
+  background: #181818;
+  border-radius: 12px;
+  padding: 1.1rem 0.7rem; /* Reduced padding for compactness */
+  font-size: 1rem;        /* Slightly smaller font */
+  min-height: 90px;       /* Lowered min-height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 4px #0002;
+  font-weight: 600;
+}
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.about-sidebar {
+  position: sticky;
+  top: 2rem;
+}
+.card.about {
+  background: #181818;
+  border-radius: 16px;
+  padding: 2rem;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 300px;
+}
+ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+}
+.main-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Reduce from 2rem to 1rem */
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.top-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem; /* Add or reduce this value */
+}
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.card.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 320px;
+  padding: 2rem;
+  background: #181818;
+  border-radius: 16px;
+  gap: 2rem;
+}
