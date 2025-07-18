@@ -158,6 +158,7 @@ ul {
   gap: 1rem; /* Reduce from 2rem to 1rem */
   max-width: 1200px;
   margin: 2rem auto;
+  padding-top: 3.0rem; /* Adjust this value as needed */
 }
 .top-row {
   display: flex;
